@@ -9,3 +9,12 @@ Route::get('/', function () {
 Route::get('/iniciar', function () {
     return view("login");
 });
+
+
+Route::get('/ayuda', function () {
+    return view("ayuda");
+});
+
+Route::get('/intranet', function () {
+    return view("intranet");
+});

@@ -1,0 +1,13 @@
+services:
+  web:
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    develop:
+      watch:
+        - action: sync
+          path: .
+          target: /app
+  mongo:
+    image: "mongo"

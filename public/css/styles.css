@@ -1,0 +1,12 @@
+#main-content {
+    padding: 10%;
+    align: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+input {
+    display: block;
+}
