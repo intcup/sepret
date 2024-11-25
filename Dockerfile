@@ -15,5 +15,8 @@ WORKDIR /app
 COPY . .
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer  && chmod +x /usr/bin/composer
 RUN composer install
+RUN mv .env.example .env
+RUN php artisan key:generate
+RUN php artisan migrate
 EXPOSE 8000
 CMD ["php", "artisan", "serve", "--host", "0.0.0.0"]
