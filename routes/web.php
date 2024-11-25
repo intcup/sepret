@@ -18,3 +18,14 @@ Route::get('/ayuda', function () {
 Route::get('/intranet', function () {
     return view("intranet");
 });
+
+Route::get('/recuperar', function () {
+    return view("recuperar");
+});
+
+Route::get('/registrar', function () {
+    return view("registrar");
+});
+Route::get('/cuenta', function () {
+    return view("cuenta");
+});

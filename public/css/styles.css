@@ -1,5 +1,5 @@
 #main-content {
-    padding: 10%;
+    padding: 5%;
     align: center;
     justify-content: center;
     align-items: center;
@@ -7,6 +7,11 @@
     display: flex;
 }
 
+.proyectos {
+    display: block;
+    min-height: 50%;
+    justify-content: initial !important;
+}
 input {
     display: block;
 }
